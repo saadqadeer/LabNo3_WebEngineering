@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	    function test(){
+
+			var usr1 = document.getElementById('user1').value;
+			var usr2 = document.getElementById('user2').value;
+			var usr3 = document.getElementById('user3').value;
+			var usr4 = document.getElementById('user4').value;
+			var usr5 = document.getElementById('user5').value;
+
+			var usre1 = document.getElementById('usere1').value;
+			var usre2 = document.getElementById('usere2').value;
+			var usre3 = document.getElementById('usere3').value;
+			var usre4 = document.getElementById('usere4').value;
+			var usre5 = document.getElementById('usere5').value;
+
+			var usrx1 = document.getElementById('userx1').value;
+			var usrx2 = document.getElementById('userx2').value;
+			var usrx3 = document.getElementById('userx3').value;
+			var usrx4 = document.getElementById('userx4').value;
+			var usrx5 = document.getElementById('userx5').value;	
+
+			document.getElementById('bio').innerHTML = usr1 + " " + usr2+ " " + usr3+ " " + usr4+ " " + usr5;
+			document.getElementById('edu').innerHTML = usre1 + " " + usre2+ " " + usre3+ " " + usre4+ " " + usre5;
+			document.getElementById('exp').innerHTML = usrx1 + " " + usrx2+ " " + usrx3+ " " + usrx4+ " " + usrx5;
+
+			document.getElementById('edu').style.display = "block";
+			document.getElementById('bio').style.display = "block";
+			document.getElementById('exp').style.display = "block";
+
+
+			return false;
+		}
+	</script>
+</head>
+<body>
+<form action="" onsubmit="return test()">
+<details>
+  <summary>Bio Information.</summary>
+  
+  <input type="text" id="user1" name="user1" required=""/ placeholder="First Name"><br><br>
+  <input type="text" id="user2" name="user2" required=""/ placeholder="Last Name"><br><br>
+  <input type="text" id="user3" name="user3" required=""/ placeholder="Father Name"><br><br>
+  <input type="text" id="user4" name="user4" required=""/ placeholder="Age"><br><br>
+  <input type="text" id="user5" name="user5" required=""/ placeholder="Gender"><br><br>
+</details>
+
+<details>
+  <summary>Education Information.</summary>
+  
+  <input type="text" id="usere1" name="usere1" required="" placeholder="Matriculation"/><br><br>
+  <input type="text" id="usere2" name="usere2" required="" placeholder="First Year"/><br><br>
+  <input type="text" id="usere3" name="usere3" required="" placeholder="Second Year"/><br><br>
+  <input type="text" id="usere4" name="usere4" required="" placeholder="Bachelors"/><br><br>
+  <input type="text" id="usere5" name="usere5" required="" placeholder="Masters"/><br><br> 
+</details>
+
+<details>
+  <summary>Expereince Information.</summary>
+  
+  <input type="text" id="userx1" name="userx1" required="" placeholder="Personal Skills"/><br><br>
+  <input type="text" id="userx2" name="userx2" required="" placeholder="Qualities"/><br><br>
+  <input type="text" id="userx3" name="userx3" required="" placeholder="Expereience"/><br><br>
+  <input type="text" id="userx4" name="userx4" required="" placeholder="Goal"/><br><br>
+  <input type="text" id="userx5" name="userx5" required="" placeholder="Other"/><br><br> 
+</details>
+
+
+
+ <input type="submit" value="Submit" />
+        
+        </form>
+<div id="bio" style="display:none;">
+Bio:
+</div>
+<div id="edu" style="display:none;">
+Education
+</div>
+
+<div id="exp" style="display:none;">
+Education
+</div>
+</body>
+</html>
